@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && rsync -avz --progress  --omit-dir-times --no-perms ./dist/ ubuntu@sbirl.com:/var/www/100.jacksonchen.me"
   },
   "dependencies": {
     "vue": "^3.3.10",
