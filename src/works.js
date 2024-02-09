@@ -1,26 +1,22 @@
 export const info = [
     {
-        name: 'Tesasdasdast',
+        name: 'Forest',
         date: '2023/12/15',
     },
     {
-        name: 'asdasdasd',
+        name: 'Fuzzy',
         date: '2023/12/15',
     },
     {
-        name: 'Test',
-        date: '2023/12/15',
+        name: 'Firework',
+        date: '2024/02/08',
     },
-    {
-        name: 'Test',
-        date: '2023/12/15',
-    }
+
 
 ]
 export const works = info.map((item, idx) => {
     return {
         ...item,
         no: `${idx + 1}`.padStart(3, '0')
-
     }
 })  
